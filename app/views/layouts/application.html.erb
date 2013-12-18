@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Writehabit</title>
+  <title>WriteHabit</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="page">
+		<header>
+			<h1>Page Title</h1>
+			<p class="description">Description</p>
+		</header>
+		<section id="content">
+			<%= yield %>
+		</section>
+		<footer>
+			Footer
+		</footer>
+	</div>
 </body>
 </html>
